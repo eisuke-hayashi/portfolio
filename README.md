@@ -4,7 +4,6 @@
 
 ## portfolio url
 https://ore-ore.web.app
-
  
 
 ## Project setup
