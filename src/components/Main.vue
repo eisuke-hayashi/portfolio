@@ -1,11 +1,7 @@
 <template>
-  <div id="app">
-   <Header />
-   <Main />
-   <About />
-   <Skill />
-   <Vision />
-   <Footer />
+  <div class="Main">
+   <h1>aa</h1>
+    
   </div>
 </template>
 
