@@ -1,6 +1,6 @@
 <template>
   <div id="headerSection">
-    <button @click="toggle" class="btn btn-success"><img src="https://iconbox.fun/wp/wp-content/uploads/bars_24.png" id="headerBottom"></button>
+    <button @click="toggle" class="btn"><img src="../assets/img/humbergerMenu3.png" id="headerButton"></button>
     <Drawer @close="toggle" align="left" :closeable="true">
       <div v-if="open">
        <menu />
@@ -11,9 +11,10 @@
 
 <script>
 import Drawer from "vue-simple-drawer";
- 
+
+
 export default {
-  name: "header",
+  name: "Header",
   components: {
     Drawer
   },
@@ -31,16 +32,22 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-#header {
+<style lang="scss" scoped>
+@import "~bootstrap/scss/bootstrap-reboot",
+"~bootstrap/scss/buttons";
+</style>
+
+<style scoped>
+#headerSection {
+  background-color: #F3F3F3;
+  width: 100%;
+  height: auto;
+ }
+#headerButton {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #f3f3f3;
-  padding-top: 150px;
-  margin: 0 auto;
-  width: 100px;
+  width: 100%;
   height: auto;
-}
+ }
 </style>
