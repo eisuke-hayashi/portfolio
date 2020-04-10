@@ -1,51 +1,30 @@
 <template>
-  <div id="app">
-    <Header />
-    <Main />
-    <About />
-    <Skill />
-    <Vision />
-    <Footer />
+  <div id="skillSection">
+    <div id="skillTitle">
+      スキル見出し
+    </div>
+    <div id="skillExplain">
+      スキル説明
+    </div>
+    <label for="gitHubLabel">
+      gitHubLabel
+    </label>
+    <a href="https://github.com/eisuke-hayashi/portfolio" />
   </div>
 </template>
 
 <script>
-  import Header from './components/Header.vue'
-  import Main from './components/Main.vue'
-  import About from './components/About.vue'
-  import Skill from './components/Skill.vue'
-  import Vision from './components/Vision.vue'
-  import Footer from './components/Footer.vue'
   export default {
-    name: 'App' , 
+    name: 'Skill' ,
     components: {
-      Header,
-      Main,
-      About,
-      Skill,
-      Vision,
-      Footer,
 }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+#skillSection {
+  text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

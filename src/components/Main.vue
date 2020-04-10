@@ -17,7 +17,10 @@
 export default {
     name: 'Main' ,
     props:{
-      msg:String
+     source: {
+     type: String,
+     required: true
+   }
     }
 }
 </script>
