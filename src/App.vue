@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-   <Header />
-   <Main />
-   <About />
-   <Skill />
-   <Vision />
-   <Footer />
-   <Menu />
+    <Header />
+    <Main />
+    <About />
+    <Skill />
+    <Vision />
+    <Footer />
+    <Menu />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import Main from './components/Main.vue'
 // import Footer from './components/Footer.vue'
 //import Menu from './components/Footer.vue'
 export default {
-  name: 'App' , 
+  name: 'App' ,
   components: {
     Header,
     Main,
@@ -33,5 +33,5 @@ export default {
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 </style>
