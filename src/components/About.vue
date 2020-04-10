@@ -1,48 +1,39 @@
 <template>
-  <div id="app">
-   <Header />
-   <Main />
-   <About />
-   <Skill />
-   <Vision />
-   <Footer />
+  <div id="aboutSection">
+    <div id="aboutTitle">
+      AboutMe
+    </div>
+    <div id="aboutExplain">
+      ak
+    </div>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import About from './components/About.vue'
-import Skill from './components/Skill.vue'
-import Vision from './components/Vision.vue'
-import Footer from './components/Footer.vue'
-export default {
-    name: 'App' , 
-    components: {
-      Header,
-      Main,
-      About,
-      Skill,
-      Vision,
-      Footer,
-}
-  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+#aboutSection {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 300px;
+  text-align: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+#aboutTitle {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  text-shadow: 2px 3px 9px #eeccd2;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+#aboutExplain {
+  color: #707070;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12pt;
+  word-break: break-all;
+  line-height: 10vh;
 }
 </style>
