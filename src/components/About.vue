@@ -4,7 +4,7 @@
       AboutMe
     </div>
     <div id="aboutExplain">
-      ak
+      大阪府出身
     </div>
   </div>
 </template>
@@ -34,6 +34,6 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12pt;
   word-break: break-all;
-  line-height: 10vh;
+  line-height: 1.7;
 }
 </style>
