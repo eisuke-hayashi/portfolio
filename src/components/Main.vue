@@ -1,7 +1,7 @@
 <template>
   <div id="mainSection">
     <div id="userName">
-      E.Hayashi
+      Eisuke.Hayashi
     </div>
     <div id="companyName">
       Seattleconsulting
