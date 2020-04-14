@@ -4,7 +4,7 @@
       AboutMe
     </div>
     <div id="aboutExplain">
-      大阪府出身
+      大阪府出身の早志栄亮です。失敗しても、落ち込むことがなく、切り替えて前向きに頑張ることができます。
     </div>
   </div>
 </template>

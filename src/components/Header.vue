@@ -15,7 +15,7 @@
       @close="toggle"
     >
       <div v-if="open">
-        <menu />
+        <Menu />
       </div>
     </Drawer>
   </div>
@@ -23,12 +23,12 @@
 
 <script>
 import Drawer from "vue-simple-drawer";
-
-
+import Menu from '../components/Menu.vue'
 export default {
   name: "Header",
   components: {
-    Drawer
+    Drawer,
+    Menu,
   },
   data() {
     return {

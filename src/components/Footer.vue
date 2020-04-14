@@ -44,19 +44,19 @@ export default {
 }
 
 #footerCopyright {
-  color: #fff;
+  color: black;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12pt;
   position: relative;
-  top: 30px;
+  top: 15px;
 }
 
 #footerScroll {
   position: relative;
-  top: -15px;
+  top: -20px;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
 }
 
 </style>
