@@ -1,7 +1,7 @@
 <template>
   <div id="skillSection">
     <div id="skillTitle">
-      スキル見出し
+      <h1>スキル見出し</h1>
     </div>
     <div id="skillExplain">
       スキル説明
@@ -15,16 +15,29 @@
     >
       Git hub"https://github.com/eisuke-hayashi/portfolio"
     </a>
+    <div>
+      <h1>棒グラフと線グラフ</h1>
+    </div>
     <a id="skillCategories" />
     <div id="skillList" />
-    <div id="skillGraph" />
+    <div id="skillGraph">
+      <frontend />
+      <backend />
+      <Dev />
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
+import Frontend from '../components/Frontend.vue';
+import Backend from '../components/Backend.vue';
+import Dev from '../components/Dev.vue';
+export default {
     name: 'Skill' ,
     components: {
+      Frontend,
+      Backend,
+      Dev
 }
   }
 </script>

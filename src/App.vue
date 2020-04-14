@@ -6,7 +6,6 @@
     <Skill />
     <Vision />
     <Footer />
-    <Menu />
   </div>
 </template>
 
@@ -17,7 +16,6 @@ import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
-import Menu from './components/Menu.vue'
 export default {
   name: 'App' ,
   components: {
@@ -27,7 +25,6 @@ export default {
     Skill,
     Vision,
     Footer,
-    Menu,
   }
 }
 </script>
