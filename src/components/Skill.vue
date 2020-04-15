@@ -15,15 +15,69 @@
     >
       Git hub"https://github.com/eisuke-hayashi/portfolio"
     </a>
-    <div>
-      <h1>棒グラフと線グラフ</h1>
+    <div id="skillCategories">
+      <ul>
+        <li
+          id="front"
+          @click="setCurrentChart('front')"
+        >
+          Front-end
+        </li>
+        <li
+          id="back"
+          @click="setCurrentChart('back')"
+        >
+          Back-end
+        </li>
+        <li
+          id="dev"
+          @click="setCurrentChart('dev')"
+        >
+          DevOps
+        </li>
+      </ul>
     </div>
-    <a id="skillCategories" />
-    <div id="skillList" />
+    <div id="skillList">
+      <ul
+        id="frontend"
+        :class="{'frontchange': frontActive}"
+      >
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>SCSS</li>
+        <li>Vue</li>
+      </ul>
+      <ul
+        id="backend"
+        :class="{'backchange': backActive}"
+      >
+        <li>Java</li>
+        <li>Ruby</li>
+        <li>RubyOnRails</li>
+        <li>MySQL</li>
+      </ul>
+      <ul
+        id="devops"
+        :class="{'devchange': devActive}"
+      >
+        <li>Linux</li>
+        <li>Node</li>
+        <li>Git</li>
+        <li>Github</li>
+        <li>Firebase</li>
+      </ul>
+    </div>
     <div id="skillGraph">
-      <frontend />
-      <backend />
-      <Dev />
+      <div v-if="frontActive">
+        <frontend />
+      </div>
+      <div v-if="backActive">
+        <backend />
+      </div>
+      <div v-if="devActive">
+        <Dev />
+      </div>
     </div>
   </div>
 </template>
@@ -38,8 +92,29 @@ export default {
       Frontend,
       Backend,
       Dev
-}
+},
+data(){
+  return{
+    currentChart: 'front'
   }
+},
+computed: {
+     frontActive() {
+       return this.currentChart=='front';
+     },
+     backActive() {
+       return this.currentChart=='back';
+     },
+     devActive() {
+       return this.currentChart=='dev';
+     }
+},
+methods: {
+     setCurrentChart(chart) {
+       this.currentChart = chart;
+     }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -49,6 +124,7 @@ export default {
   background-color: #fff;
   width: 100%;
   height: 100%;
+  list-style: none;
 }
 
 #skillTitle {
@@ -73,4 +149,65 @@ export default {
   font-size: 12pt;
 }
 
+#skillCategories li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+  color: #fff;
+}
+
+#front {
+  background-color: crimson;
+}
+
+#back {
+  background-color: green;
+}
+
+#dev {
+  background-color: blueviolet;
+}
+
+#skillList li {
+  list-style: none;
+  display: inline-block;
+  margin: 40px;
+  color: #fff;
+}
+
+#frontend li {
+  color: crimson;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+#backend li {
+  color: green;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+#devops li {
+  color: blueviolet;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.frontchange {
+  color: crimson;
+  background-color: black;
+}
+
+.backchange {
+  color: green;
+  background-color: black;
+}
+
+.devchange {
+  color: blueviolet;
+  background-color: black;
+}
 </style>

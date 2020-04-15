@@ -6,28 +6,28 @@
           id="drawerMenuItemLink"
           href=".mainSection"
           @click="clickSmoothScroll1()"
-        >・HOME </a>
+        >HOME </a>
       </li>
       <li id="drawerMenuItem">
         <a
           id="drawerMenuItemLink"
           href=".aboutSection"
           @click="clickSmoothScroll2()"
-        >・ABOUT ME </a>
+        >ABOUT ME </a>
       </li>
       <li id="drawerMenuItem">
         <a
           id="drawerMenuItemLink"
           href=".skillSection"
           @click="clickSmoothScroll3()"
-        >・SKILL </a>
+        >SKILL </a>
       </li>
       <li id="drawerMenuItem">
         <a
           id="drawerMenuItemLink"
           href=".visionSection"
           @click="clickSmoothScroll4()"
-        >・VISION </a>
+        >VISION </a>
       </li>
     </ul>
   </div>
@@ -82,7 +82,7 @@ export default {
 
 <style scoped>
 #drawerSection {
-  background-color: #f3f3f3;
+  background-color: grey;
   width: 100%;
   height: auto;
 }
