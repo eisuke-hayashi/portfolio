@@ -4,7 +4,11 @@
       <h1>SKILL SET</h1>
     </div>
     <div id="skillExplain">
-      エンジニアは未経験です。これから、技術や知識を吸収していきます。
+      エンジニアは未経験です。研修が始まって、半月ほど経ちますが
+      エンジニアとして覚えなければいけない知識の量に圧倒されています。
+      内定者研修中は、Rubyが1番理解を深めることができたと感じています。
+      まだまだ経験も知識も足りていない状態ですが、
+      今後は、もっと技術や知識を吸収していきます。
     </div>
     <label for="gitHubLabel">
       gitHubLabel
@@ -17,23 +21,26 @@
     </a>
     <div id="skillCategories">
       <ul>
-        <li
-          id="front"
-          @click="setCurrentChart('front')"
-        >
-          Front-end
+        <li>
+          <span
+            id="front"
+            @click="setCurrentChart('front')"
+          >
+            Front-end</span>
         </li>
-        <li
-          id="back"
-          @click="setCurrentChart('back')"
-        >
-          Back-end
+        <li>
+          <span
+            id="back"
+            @click="setCurrentChart('back')"
+          >
+            Back-end</span>
         </li>
-        <li
-          id="dev"
-          @click="setCurrentChart('dev')"
-        >
-          DevOps
+        <li>
+          <span
+            id="dev"
+            @click="setCurrentChart('dev')"
+          >
+            DevOps</span>
         </li>
       </ul>
     </div>
@@ -140,7 +147,8 @@ methods: {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12pt;
   word-break: break-all;
-  line-height: 10vh;
+  line-height: 1.7;
+  padding: 20px 50px;
 }
 
 #gitHubLabel {
@@ -149,65 +157,91 @@ methods: {
   font-size: 12pt;
 }
 
+#skillGraph {
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ３つ全体 */
 #skillCategories li {
   display: inline-block;
   list-style: none;
   margin: 10px;
   color: #fff;
+  padding: 20px;
 }
 
+/* 上3つの各々 */
 #front {
-  background-color: crimson;
+  cursor: pointer;
+  color: crimson;
+  font-size: 20px;
 }
 
 #back {
-  background-color: green;
+  cursor: pointer;
+  color: green;
+  font-size: 20px;
 }
 
 #dev {
-  background-color: blueviolet;
+  cursor: pointer;
+  color: blueviolet;
+  font-size: 20px;
 }
 
-#skillList li {
-  list-style: none;
+/* スキルリスト全体 */
+#skillList {
+  width: auto;
+  font-size: 18px;
+  padding: 10px 0 50px 0;
   display: inline-block;
-  margin: 40px;
-  color: #fff;
+  margin: 10px;
 }
 
+/* それぞれのボックス */
 #frontend li {
   color: crimson;
+  background-color: pink;
   display: inline-block;
-  vertical-align: middle;
   margin: 10px;
+  box-shadow: 0 0 8px gray;
 }
 
 #backend li {
   color: green;
+  background-color: greenyellow;
   display: inline-block;
-  vertical-align: middle;
   margin: 10px;
+  box-shadow: 0 0 8px gray;
 }
 
 #devops li {
   color: blueviolet;
+  background-color: plum;
   display: inline-block;
-  vertical-align: middle;
   margin: 10px;
+  box-shadow: 0 0 8px gray;
 }
 
+/* クリックした時 */
 .frontchange {
   color: crimson;
   background-color: pink;
+  padding: 10px 10px;
 }
 
 .backchange {
   color: green;
   background-color: greenyellow;
+  padding: 10px 10px;
 }
 
 .devchange {
   color: blueviolet;
   background-color: plum;
+  padding: 10px 10px;
 }
 </style>

@@ -16,16 +16,9 @@ export default {
     borderWidth: 5,
     pointBackgroundColor: 'RGB(100,0,0)'
   },
-          {
-            borderWidth: 1
-          }
         ]
       },
       options: {
-  title: {
-    display: true,
-  text: 'Front-end'
-  },
   scale:{
     ticks:{
       suggestedMax: 5,

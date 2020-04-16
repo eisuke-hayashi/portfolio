@@ -1,7 +1,7 @@
 <template>
   <div id="footerSection">
     <div id="footerCopyright">
-      @seattleconsulting
+      ©️seattleconsulting
     </div>
     <a
       href="header"

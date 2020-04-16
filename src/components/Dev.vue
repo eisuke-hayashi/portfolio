@@ -16,16 +16,9 @@ export default {
     borderWidth: 5,
     pointBackgroundColor: 'RGB(46,106,177)'
   },
-          {
-            borderWidth: 1
-          }
         ]
       },
       options: {
-  title: {
-    display: true,
-  text: 'DevOps'
-  },
   scale:{
     ticks:{
       suggestedMax: 5,
