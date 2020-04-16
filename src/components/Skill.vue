@@ -1,10 +1,10 @@
 <template>
   <div id="skillSection">
     <div id="skillTitle">
-      <h1>スキル見出し</h1>
+      <h1>SKILL SET</h1>
     </div>
     <div id="skillExplain">
-      スキル説明
+      エンジニアは未経験です。これから、技術や知識を吸収していきます。
     </div>
     <label for="gitHubLabel">
       gitHubLabel
@@ -198,16 +198,16 @@ methods: {
 
 .frontchange {
   color: crimson;
-  background-color: black;
+  background-color: pink;
 }
 
 .backchange {
   color: green;
-  background-color: black;
+  background-color: greenyellow;
 }
 
 .devchange {
   color: blueviolet;
-  background-color: black;
+  background-color: plum;
 }
 </style>

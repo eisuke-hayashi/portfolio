@@ -10,11 +10,11 @@ export default {
         labels: ['Java','Ruby','RubyOnRails','MySQL'],
         datasets: [{
     label: 'back-end',
-    data: [2, 3, 3, 4],
-    backgroundColor: 'RGBA(225,95,150, 0.5)',
-    borderColor: 'RGBA(225,95,150, 1)',
+    data: [2, 4, 2, 1],
+    backgroundColor: 'RGBA(0,100,0, 0.5)',
+    borderColor: 'RGBA(0,95,0, 1)',
     borderWidth: 5,
-    pointBackgroundColor: 'RGB(46,106,177)'
+    pointBackgroundColor: 'RGB(0,200,0)'
   },
           {
             borderWidth: 1
@@ -30,7 +30,7 @@ export default {
     ticks:{
       suggestedMax: 5,
       suggestedMin: 0,
-      stepSize: 5,
+      stepSize: 1,
       callback: function(value){
         return  value +  '点'
       }

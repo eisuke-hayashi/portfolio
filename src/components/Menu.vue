@@ -20,7 +20,7 @@
           id="drawerMenuItemLink"
           href=".skillSection"
           @click="clickSmoothScroll3()"
-        >SKILL </a>
+        >SKILL SET </a>
       </li>
       <li id="drawerMenuItem">
         <a

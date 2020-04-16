@@ -10,9 +10,9 @@ export default {
         labels: ['Linux','Node','Git','Github','Firebase'],
         datasets: [{
     label: 'devops',
-    data: [2, 2, 3, 4, 2],
-    backgroundColor: 'RGBA(225,95,150, 0.5)',
-    borderColor: 'RGBA(225,95,150, 1)',
+    data: [3, 2, 4, 4, 3],
+    backgroundColor: 'RGBA(150,0,150, 0.5)',
+    borderColor: 'RGBA(150,95,150, 1)',
     borderWidth: 5,
     pointBackgroundColor: 'RGB(46,106,177)'
   },

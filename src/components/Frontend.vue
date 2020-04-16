@@ -10,8 +10,8 @@ export default {
         labels: ['HTML','CSS','Javascript','SCSS','Vue'],
         datasets: [{
     label: 'front-end',
-    data: [1, 1, 1, 1, 2],
-    backgroundColor: 'RGBA(225,95,150, 0.5)',
+    data: [3, 4, 2, 1, 3],
+    backgroundColor: 'RGBA(225,0,0, 0.5)',
     borderColor: 'RGBA(225,95,150, 1)',
     borderWidth: 5,
     pointBackgroundColor: 'RGB(100,0,0)'
@@ -30,7 +30,7 @@ export default {
     ticks:{
       suggestedMax: 5,
       suggestedMin: 0,
-      stepSize: 5,
+      stepSize: 1,
       callback: function(value){
         return  value +  '点'
       }
