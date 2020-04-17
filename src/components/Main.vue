@@ -1,7 +1,7 @@
 <template>
   <div id="mainSection">
     <div id="userName">
-      E.Hayashi
+      Eisuke.Hayashi
     </div>
     <div id="companyName">
       Seattleconsulting
@@ -40,6 +40,8 @@ export default {
   font-size: 18pt;
   font-weight: bold;
   text-shadow: 2px 3px 9px #191314;
+  border-bottom: 2px solid white;
+  padding: 10px 0 10px 0;
 }
 
 #companyName {
@@ -48,6 +50,7 @@ export default {
   font-size: 18pt;
   font-weight: bold;
   text-shadow: 2px 3px 9px #191314;
+  padding: 5px 0 10px 0;
 }
 
 #profilePicture {
