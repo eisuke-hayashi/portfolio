@@ -11,10 +11,10 @@ export default {
         datasets: [{
     label: 'front-end',
     data: [3, 4, 2, 1, 3],
-    backgroundColor: 'RGBA(225,0,0, 0.5)',
+    backgroundColor: 'RGBA(100,20,0, 0.3)',
     borderColor: 'RGBA(225,95,150, 1)',
     borderWidth: 5,
-    pointBackgroundColor: 'RGB(100,0,0)'
+    pointBackgroundColor: 'RGB(100,20,0)'
   },
         ]
       },

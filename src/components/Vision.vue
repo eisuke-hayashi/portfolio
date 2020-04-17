@@ -19,7 +19,7 @@
 <style scoped>
 #visionSection {
   text-align: center;
-  background: linear-gradient(#80e1f7, #06c1e6);
+  background-color: #f5f5f5;
   width: 100%;
   height: auto;
 }

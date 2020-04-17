@@ -47,8 +47,6 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
   "~bootstrap/scss/buttons";
-$--simple-drawer-bg-color:#fff;
-
 @import "~vue-simple-drawer/src/index";
 </style>
 
@@ -57,6 +55,10 @@ $--simple-drawer-bg-color:#fff;
   background-color: #f3f3f3;
   width: 100%;
   height: auto;
+}
+
+.vue-simple-drawer {
+  background-color: white !important;
 }
 
 #headerButton {

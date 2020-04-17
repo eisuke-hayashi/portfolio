@@ -11,7 +11,7 @@ export default {
         datasets: [{
     label: 'back-end',
     data: [2, 4, 2, 1],
-    backgroundColor: 'RGBA(0,100,0, 0.5)',
+    backgroundColor: 'RGBA(0,100,0, 0.2)',
     borderColor: 'RGBA(0,95,0, 1)',
     borderWidth: 5,
     pointBackgroundColor: 'RGB(0,200,0)'
