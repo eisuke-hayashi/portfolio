@@ -1,14 +1,14 @@
 <template>
   <div id="visionSection">
     <div id="visionTitle">
-      Vision
+      VISION
     </div>
     <div id="visionExplain">
-      エンジニアとしてキャリアをスタートした後、営業として働き
-      大阪支社の拡大に尽力し、大阪支社の中核を担っていけるような存在に
+      まずは、エンジニアとしてキャリアをスタートした後、営業として働きたいと考えています。
+      そして、その先は、大阪支社の拡大に尽力し、大阪支社の中核を担っていけるような存在に
       なることを目標に務めていきたいと思います。まだまだ未熟者ですが、
       皆さんと力を合わせて、シアトルをより飛躍させていきたいです。
-      どうぞよろしくお願い致します！！
+      どうぞよろしくお願い致します。
     </div>
   </div>
 </template>
@@ -37,6 +37,7 @@
   font-size: 12pt;
   word-break: break-all;
   line-height: 1.7;
+  padding: 20px 50px;
 }
 
 </style>

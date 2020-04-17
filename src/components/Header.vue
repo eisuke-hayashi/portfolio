@@ -15,7 +15,7 @@
       @close="toggle"
     >
       <div v-if="open">
-        <Menu />
+        <Menu @Menu-close="toggle" />
       </div>
     </Drawer>
   </div>
@@ -44,9 +44,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
+<style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
   "~bootstrap/scss/buttons";
+$--simple-drawer-bg-color:#fff;
+
+@import "~vue-simple-drawer/src/index";
 </style>
 
 <style scoped>

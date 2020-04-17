@@ -20,7 +20,7 @@
           id="drawerMenuItemLink"
           href=".skillSection"
           @click="clickSmoothScroll3()"
-        >SKILL </a>
+        >SKILL SET </a>
       </li>
       <li id="drawerMenuItem">
         <a
@@ -45,6 +45,7 @@ export default {
         null,
         'y'
       )
+      this.$emit('Menu-close')
     },
     clickSmoothScroll2 () {
       event.preventDefault()
@@ -55,6 +56,7 @@ export default {
         null,
         'y'
       )
+      this.$emit('Menu-close')
     },
     clickSmoothScroll3 () {
       event.preventDefault()
@@ -65,6 +67,7 @@ export default {
         null,
         'y'
       )
+      this.$emit('Menu-close')
     },
     clickSmoothScroll4 () {
       event.preventDefault()
@@ -75,6 +78,7 @@ export default {
         null,
         'y'
       )
+      this.$emit('Menu-close')
     }
   }
 }
@@ -82,7 +86,7 @@ export default {
 
 <style scoped>
 #drawerSection {
-  background-color: grey;
+  background-color: white;
   width: 100%;
   height: auto;
 }
