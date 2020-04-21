@@ -114,7 +114,10 @@ computed: {
      },
      devActive() {
        return this.currentChart=='dev';
-     }
+     },
+     skillCategories() {
+      return this.$store.getters.skillCategories
+    }
 },
 methods: {
      setCurrentChart(chart) {
