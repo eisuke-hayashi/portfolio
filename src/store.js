@@ -35,11 +35,11 @@ const store = new Vuex.Store({
   actions: {
     async updateSkillCategories({commit}){
       const skillCategories = [];
-      const res =await axios.get('https://us-central1-ore-ore.cloudfunctions.net/skills')
+      const res =await axios.get('https://us-central1-ore-ore.cloudfunctions.net/skillCategories')
       res.data.forEach((category) => {
         skillCategories.push(category);
       });
-      commit('skillCategories',{skillCategories})
+      commit('setSkillCategories',{skillCategories})
     },
   },
 });

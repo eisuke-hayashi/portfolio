@@ -16,7 +16,7 @@ import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
-import {mapActions,mapGetters} from 'vuex'
+import {mapActions} from 'vuex'
 export default {
   name: 'App' ,
   components: {
@@ -38,18 +38,15 @@ export default {
       skillCategories(){
         return this.$store.getters.skillCategories
       },
-      ...mapGetters({
-       get: 'getSkills'
-    }),
+    //   ...mapGetters({
+    //    get: 'getSkills'
+    // }),
   },
   mounted () {
     this.updateSkillCategories();
   },
   methods: {
     ...mapActions(['updateSkillCategories']),
-    updateSkillCategories(event){
-       this.$store.dispatch('updateSkillCategories',event)
-    },
   }
 }
 </script>
