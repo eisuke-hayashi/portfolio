@@ -16,12 +16,6 @@
 <script>
 export default {
     name: 'Main' ,
-    props:{
-     source: {
-     type: String,
-     required: true
-   }
-    }
 }
 </script>
 
