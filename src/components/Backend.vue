@@ -7,10 +7,10 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Java','Ruby','RubyOnRails','MySQL'],
+        labels: [],
         datasets: [{
     label: 'back-end',
-    data: [2, 4, 2, 1],
+    data: [],
     backgroundColor: 'RGBA(0,100,0, 0.2)',
     borderColor: 'RGBA(0,95,0, 1)',
     borderWidth: 5,
@@ -33,7 +33,17 @@ export default {
     }
   },
   mounted () {
+    this.getSkills()
     this.renderChart(this.data, this.options)
+  },
+  methods: {
+    getSkills() {
+      const frontSkillInfo = this.$store.getters.getSkills('back-end')
+      frontSkillInfo.skills.forEach((skill) => {
+      this.data.labels.push(skill.name)
+      this.data.datasets[0].data.push(skill.score)
+      })
+    }
   }
 }
 </script>

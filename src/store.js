@@ -10,14 +10,14 @@ const store = new Vuex.Store({
   //state:コンポーネントでいうdata/アプリケーションの状態（情報）
   state: {
     skillCategories: [],
+    loaded: false
   },
 
   //getters:コンポーネントでいうcomputed的なもの/stateの一部やstateから返された値を保持する
   getters:{
-    //messageを使用するgetter
       getSkills:(state)=>(category)=>{
-        if (state.setSkillCategories.length > 0) {
-          return state.skillCategories.find((skill) => skill.Categories===category);
+        if (state.skillCategories.length > 0) {
+          return state.skillCategories.find((skill) => skill.category===category);
         }
         return [];
       },
@@ -29,6 +29,7 @@ const store = new Vuex.Store({
     //payloadはオブジェクトにするべき（いっぱい入れれるし）
     setSkillCategories (state,payload){
       state.skillCategories = payload.skillCategories;
+      state.loaded = true
     },
   },
   //actionのコミットを使うことでミューテーションを呼び出す（コンポーネントには無い概念）

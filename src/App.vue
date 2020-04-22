@@ -29,7 +29,7 @@ export default {
   },
   data: function() {
     return {
-      skills: []
+      category: 'front-end'
    }
   },
   computed: {

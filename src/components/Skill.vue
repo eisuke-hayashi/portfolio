@@ -76,7 +76,7 @@
       </ul>
     </div>
     <div id="skillGraph">
-      <div v-if="frontActive">
+      <div v-if="frontActive && loaded">
         <frontend />
       </div>
       <div v-if="backActive">
@@ -115,8 +115,8 @@ computed: {
      devActive() {
        return this.currentChart=='dev';
      },
-     skillCategories() {
-      return this.$store.getters.skillCategories
+     loaded() {
+      return this.$store.state.loaded
     }
 },
 methods: {
