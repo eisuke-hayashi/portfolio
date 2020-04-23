@@ -3,7 +3,6 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 Vue.use(Vuex)
-Vue.use(axios)
 
 const store = new Vuex.Store({
 
