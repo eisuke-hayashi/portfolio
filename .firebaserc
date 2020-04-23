@@ -1,5 +1,21 @@
 {
   "projects": {
     "default": "ore-ore"
+  },
+  "targets": {
+    "ore-ore": {
+      "hosting": {
+        "portfolio": [
+          "ore-ore"
+        ]
+      }
+    },
+    "deploy-portfolio-2089b": {
+      "hosting": {
+        "portfolio": [
+          "deploy-portfolio-2089b"
+        ]
+      }
+    }
   }
 }

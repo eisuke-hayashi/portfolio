@@ -16,6 +16,7 @@ import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vision from './components/Vision.vue'
 import Footer from './components/Footer.vue'
+import {mapActions} from 'vuex'
 export default {
   name: 'App' ,
   components: {
@@ -25,6 +26,27 @@ export default {
     Skill,
     Vision,
     Footer,
+  },
+  data: function() {
+    return {
+      category: 'front-end'
+   }
+  },
+  computed: {
+    //main.jsでローカルにstoreを登録してるので、$storeが使える
+    //ここではgettersに登録したmessageゲッターを使ってstoreのstateのmessageを取得している
+      skillCategories(){
+        return this.$store.getters.skillCategories
+      },
+    //   ...mapGetters({
+    //    get: 'getSkills'
+    // }),
+  },
+  mounted () {
+    this.updateSkillCategories();
+  },
+  methods: {
+    ...mapActions(['updateSkillCategories']),
   }
 }
 </script>

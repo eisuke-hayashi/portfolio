@@ -11,13 +11,13 @@
       今後は、もっと技術や知識を吸収していきます。
     </div>
     <label for="gitHubLabel">
-      gitHubLabel
+      Git hub:
     </label>
     <a
       href="https://github.com/eisuke-hayashi/portfolio"
       target="_blank"
     >
-      Git hub"https://github.com/eisuke-hayashi/portfolio"
+      "https://github.com/eisuke-hayashi/portfolio"
     </a>
     <div id="skillCategories">
       <ul>
@@ -76,7 +76,7 @@
       </ul>
     </div>
     <div id="skillGraph">
-      <div v-if="frontActive">
+      <div v-if="frontActive && loaded">
         <frontend />
       </div>
       <div v-if="backActive">
@@ -114,7 +114,10 @@ computed: {
      },
      devActive() {
        return this.currentChart=='dev';
-     }
+     },
+     loaded() {
+      return this.$store.state.loaded
+    }
 },
 methods: {
      setCurrentChart(chart) {
@@ -204,7 +207,6 @@ methods: {
 /* それぞれのボックス */
 #frontend li {
   color: crimson;
-  background-color: pink;
   display: inline-block;
   margin: 10px;
   box-shadow: 0 0 8px gray;
@@ -212,7 +214,6 @@ methods: {
 
 #backend li {
   color: green;
-  background-color: greenyellow;
   display: inline-block;
   margin: 10px;
   box-shadow: 0 0 8px gray;
@@ -220,7 +221,6 @@ methods: {
 
 #devops li {
   color: blueviolet;
-  background-color: plum;
   display: inline-block;
   margin: 10px;
   box-shadow: 0 0 8px gray;
@@ -230,18 +230,15 @@ methods: {
 .frontchange {
   color: crimson;
   background-color: pink;
-  padding: 10px 10px;
 }
 
 .backchange {
   color: green;
   background-color: greenyellow;
-  padding: 10px 10px;
 }
 
 .devchange {
   color: blueviolet;
   background-color: plum;
-  padding: 10px 10px;
 }
 </style>

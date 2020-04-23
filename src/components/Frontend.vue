@@ -7,14 +7,14 @@ export default {
   data () {
     return {
       data: {
-        labels: ['HTML','CSS','Javascript','SCSS','Vue'],
+        labels: [],
         datasets: [{
     label: 'front-end',
-    data: [3, 4, 2, 1, 3],
-    backgroundColor: 'RGBA(225,0,0, 0.5)',
+    data: [],
+    backgroundColor: 'RGBA(100,20,0, 0.3)',
     borderColor: 'RGBA(225,95,150, 1)',
     borderWidth: 5,
-    pointBackgroundColor: 'RGB(100,0,0)'
+    pointBackgroundColor: 'RGB(100,20,0)'
   },
         ]
       },
@@ -33,7 +33,19 @@ export default {
     }
   },
   mounted () {
+    this.getSkills()
     this.renderChart(this.data, this.options)
+  },
+  methods: {
+    getSkills() {
+      const frontSkillInfo = this.$store.getters.getSkills('front-end')
+      /* eslint-disable no-debugger */
+      debugger
+      frontSkillInfo.skills.forEach((skill) => {
+      this.data.labels.push(skill.name)
+      this.data.datasets[0].data.push(skill.score)
+      })
+    }
   }
 }
 </script>
