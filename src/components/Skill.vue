@@ -167,13 +167,29 @@ methods: {
   margin-right: auto;
 }
 
+.frontchange li {
+  color: crimson;
+  background-color: pink;
+}
+
+.backchange li {
+  color: green;
+  background-color: greenyellow;
+}
+
+.devchange li {
+  color: blueviolet;
+  background-color: plum;
+}
+
 /* ３つ全体 */
 #skillCategories li {
   display: inline-block;
   list-style: none;
-  margin: 10px;
+  margin: 30px 5px 5px 5px;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
+  box-shadow: 0 0 8px gray;
 }
 
 /* 上3つの各々 */
@@ -227,18 +243,4 @@ methods: {
 }
 
 /* クリックした時 */
-.frontchange {
-  color: crimson;
-  background-color: pink;
-}
-
-.backchange {
-  color: green;
-  background-color: greenyellow;
-}
-
-.devchange {
-  color: blueviolet;
-  background-color: plum;
-}
 </style>

@@ -8,7 +8,7 @@
       @click="clickSmoothScroll()"
     ><img
       id="footerScroll"
-      src="../assets/img/footer2.jpg"
+      src="../assets/img/footer.png"
     ></a>
     <div id="hoge">
       <a
@@ -53,10 +53,11 @@ export default {
 
 #footerScroll {
   position: relative;
-  top: -20px;
+  top: -25px;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #80e1f7;
 }
 
 </style>
