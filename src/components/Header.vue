@@ -48,17 +48,21 @@ export default {
 @import "~bootstrap/scss/bootstrap-reboot",
   "~bootstrap/scss/buttons";
 @import "~vue-simple-drawer/src/index";
+$--simple-drawer-bg-color:white;
 </style>
 
 <style scoped>
 #headerSection {
-  background-color: #f3f3f3;
   width: 100%;
   height: auto;
 }
 
 .vue-simple-drawer {
   background-color: white !important;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  overflow: auto;
 }
 
 #headerButton {

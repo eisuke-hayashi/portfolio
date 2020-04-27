@@ -53,4 +53,8 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+.vue-simple-drawer {
+  background-color: white !important;
+}
 </style>
